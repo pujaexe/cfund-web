@@ -23,11 +23,6 @@
   min-width: 0;
   min-height: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .heroSection:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
-}
 .peformanceSection:global(.__wab_instance) {
   position: relative;
 }

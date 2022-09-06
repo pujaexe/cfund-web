@@ -150,7 +150,11 @@ function PlasmicHeroSection__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__olGvT)}
-                    displayHeight={"55px" as const}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("40px" as const)
+                        : ("55px" as const)
+                    }
                     displayMaxHeight={"none" as const}
                     displayMaxWidth={"100%" as const}
                     displayMinHeight={"0" as const}
@@ -168,7 +172,11 @@ function PlasmicHeroSection__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img___1BrAw)}
-                    displayHeight={"55px" as const}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("40px" as const)
+                        : ("55px" as const)
+                    }
                     displayMaxHeight={"none" as const}
                     displayMaxWidth={"100%" as const}
                     displayMinHeight={"0" as const}
