@@ -11,6 +11,12 @@
   min-width: 0;
   padding: 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 .feeContainer {
   flex-direction: row;
   display: flex;
@@ -57,13 +63,27 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .feeContainer > :global(.__wab_flex-container) {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     min-width: 0;
+    margin-top: calc(0px - 32px);
+    height: calc(100% + 32px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .feeContainer > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * 24px) * 12 / 12);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .feeContainer > :global(.__wab_flex-container) > *,
+  .feeContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .feeContainer > :global(.__wab_flex-container) > picture > img,
+  .feeContainer
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-top: 32px;
   }
 }
 .column___7PrYu {

@@ -35,6 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariants_68So83ItnbSuT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 68So83itnbSuT/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cfund_landing_page.module.css"; // plasmic-import: CK5Roq2dBGcRPqc72xPE7/projectcss
@@ -82,6 +84,10 @@ function PlasmicHowtoSection__RenderFunc(props: {
   );
 
   const $props = args;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_68So83ItnbSuT()
+  });
 
   return (
     <p.Stack

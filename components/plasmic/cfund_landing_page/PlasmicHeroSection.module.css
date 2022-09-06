@@ -11,6 +11,12 @@
   min-width: 0;
   padding: 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+}
 .freeBox__y6Nw {
   display: flex;
   position: relative;

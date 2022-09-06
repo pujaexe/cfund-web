@@ -35,6 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariants_68So83ItnbSuT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 68So83itnbSuT/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cfund_landing_page.module.css"; // plasmic-import: CK5Roq2dBGcRPqc72xPE7/projectcss
@@ -88,6 +90,10 @@ function PlasmicFooter__RenderFunc(props: {
 
   const $props = args;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_68So83ItnbSuT()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -108,9 +114,11 @@ function PlasmicFooter__RenderFunc(props: {
         data-plasmic-override={overrides.footerContainer}
         className={classNames(projectcss.all, sty.footerContainer)}
       >
-        <div
+        <p.Stack
+          as={"div"}
           data-plasmic-name={"footerColumn"}
           data-plasmic-override={overrides.footerColumn}
+          hasGap={true}
           className={classNames(projectcss.all, sty.footerColumn)}
         >
           <div className={classNames(projectcss.all, sty.column__zuNsm)}>
@@ -335,7 +343,7 @@ function PlasmicFooter__RenderFunc(props: {
               />
             </p.Stack>
           </div>
-        </div>
+        </p.Stack>
 
         <div className={classNames(projectcss.all, sty.freeBox__lpQdq)}>
           <div
