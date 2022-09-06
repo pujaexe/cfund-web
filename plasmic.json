@@ -290,19 +290,6 @@
           "componentType": "component"
         },
         {
-          "id": "YFmC6d_7xH",
-          "name": "Temp3",
-          "type": "managed",
-          "projectId": "CK5Roq2dBGcRPqc72xPE7",
-          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicTemp3.tsx",
-          "importSpec": {
-            "modulePath": "../pages/temp-3.tsx"
-          },
-          "cssFilePath": "plasmic/cfund_landing_page/PlasmicTemp3.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "vt5GMNbvKS",
           "name": "PeformanceSection",
           "type": "managed",
@@ -627,7 +614,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -646,7 +634,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -665,7 +654,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
