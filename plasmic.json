@@ -570,6 +570,21 @@
           "id": "efO7oU5Nb",
           "name": "image 20",
           "filePath": "../public/plasmic/cfund_landing_page/images/image20.png"
+        },
+        {
+          "id": "xyfsMqWpH",
+          "name": "menu-svgrepo-com (1).svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/menuSvgrepoCom1Svg.svg"
+        },
+        {
+          "id": "de8no2N2x",
+          "name": "menu-svgrepo-com (1) 1.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/menuSvgrepoCom11Svg.svg"
+        },
+        {
+          "id": "B2O2XWz4f",
+          "name": "close-svgrepo-com (1) 1.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/closeSvgrepoCom11Svg.svg"
         }
       ],
       "indirect": false,

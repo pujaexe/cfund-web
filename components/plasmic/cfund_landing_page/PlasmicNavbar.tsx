@@ -36,6 +36,8 @@ import {
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 
+import { useScreenVariants as useScreenVariants_68So83ItnbSuT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 68So83itnbSuT/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cfund_landing_page.module.css"; // plasmic-import: CK5Roq2dBGcRPqc72xPE7/projectcss
@@ -54,7 +56,6 @@ export const PlasmicNavbar__ArgProps = new Array<ArgPropType>();
 export type PlasmicNavbar__OverridesType = {
   root?: p.Flex<"div">;
   navigationBar?: p.Flex<typeof NavigationBar>;
-  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultNavbarProps {
@@ -82,6 +83,10 @@ function PlasmicNavbar__RenderFunc(props: {
   );
 
   const $props = args;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_68So83ItnbSuT()
+  });
 
   return (
     <div
@@ -113,10 +118,8 @@ function PlasmicNavbar__RenderFunc(props: {
             platform={"nextjs"}
           >
             <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
               alt={""}
-              className={classNames(sty.img)}
+              className={classNames(sty.img__gxyG)}
               displayHeight={"24px" as const}
               displayMaxHeight={"none" as const}
               displayMaxWidth={"none" as const}
@@ -137,13 +140,30 @@ function PlasmicNavbar__RenderFunc(props: {
           <p.PlasmicImg
             alt={""}
             className={classNames(sty.img__qKhTk)}
-            displayHeight={"auto" as const}
+            displayHeight={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("16px" as const)
+                : ("auto" as const)
+            }
             displayMaxHeight={"none" as const}
             displayMaxWidth={"none" as const}
             displayMinHeight={"0" as const}
             displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
-            src={"https://static1.plasmic.app/close.svg" as const}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("16px" as const)
+                : ("auto" as const)
+            }
+            src={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? {
+                    src: "/plasmic/cfund_landing_page/images/closeSvgrepoCom11Svg.svg",
+                    fullWidth: 150,
+                    fullHeight: 150,
+                    aspectRatio: 1
+                  }
+                : ("https://static1.plasmic.app/close.svg" as const)
+            }
           />
         }
         forceOpenMenu={false}
@@ -253,13 +273,30 @@ function PlasmicNavbar__RenderFunc(props: {
           <p.PlasmicImg
             alt={""}
             className={classNames(sty.img__laOO)}
-            displayHeight={"auto" as const}
+            displayHeight={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("16px" as const)
+                : ("auto" as const)
+            }
             displayMaxHeight={"none" as const}
             displayMaxWidth={"none" as const}
             displayMinHeight={"0" as const}
             displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
-            src={"https://static1.plasmic.app/menu.svg" as const}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("16px" as const)
+                : ("auto" as const)
+            }
+            src={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? {
+                    src: "/plasmic/cfund_landing_page/images/menuSvgrepoCom11Svg.svg",
+                    fullWidth: 150,
+                    fullHeight: 150,
+                    aspectRatio: 1
+                  }
+                : ("https://static1.plasmic.app/menu.svg" as const)
+            }
           />
         }
         responsiveBreakpoint={768 as const}
@@ -269,9 +306,8 @@ function PlasmicNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "img"],
-  navigationBar: ["navigationBar", "img"],
-  img: ["img"]
+  root: ["root", "navigationBar"],
+  navigationBar: ["navigationBar"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -279,7 +315,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
-  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -344,7 +379,6 @@ export const PlasmicNavbar = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
