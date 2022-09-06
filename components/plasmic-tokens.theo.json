@@ -1,9 +1,79 @@
 {
   "props": [
     {
+      "name": "Blue-Primary",
+      "type": "color",
+      "value": "#3180FF",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "cOLjAj_0I"
+      }
+    },
+    {
+      "name": "Deep-Purple",
+      "type": "color",
+      "value": "#735CF6",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "F3svMWPCO"
+      }
+    },
+    {
+      "name": "Orange",
+      "type": "color",
+      "value": "#FF5C28",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "dP-l7U_2o"
+      }
+    },
+    {
+      "name": "Purple",
+      "type": "color",
+      "value": "#B133FF",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "XtGcqL4hU"
+      }
+    },
+    {
+      "name": "Purple-Grey",
+      "type": "color",
+      "value": "#7B80C0",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "b_98UoxNi"
+      }
+    },
+    {
+      "name": "Red",
+      "type": "color",
+      "value": "#FE2626",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "c-K1R2EOC"
+      }
+    },
+    {
+      "name": "Yellow-primary",
+      "type": "color",
+      "value": "#FFA520",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "Vi_sjbcnJ"
+      }
+    },
+    {
       "name": "dark-blue",
       "type": "color",
-      "value": "#131428",
+      "value": "#011535",
       "category": "color",
       "meta": {
         "projectId": "CK5Roq2dBGcRPqc72xPE7",
@@ -13,7 +83,7 @@
     {
       "name": "dark-blue2",
       "type": "color",
-      "value": "#181B35",
+      "value": "#011C3F",
       "category": "color",
       "meta": {
         "projectId": "CK5Roq2dBGcRPqc72xPE7",
@@ -23,11 +93,41 @@
     {
       "name": "dark-blue3",
       "type": "color",
-      "value": "#242641",
+      "value": "#01264C",
       "category": "color",
       "meta": {
         "projectId": "CK5Roq2dBGcRPqc72xPE7",
         "id": "ug0m5z0a8"
+      }
+    },
+    {
+      "name": "green",
+      "type": "color",
+      "value": "#41C345",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "fL0fdHD2P"
+      }
+    },
+    {
+      "name": "green-halu",
+      "type": "color",
+      "value": "#11D2C8",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "SE2Tchhzh"
+      }
+    },
+    {
+      "name": "grey",
+      "type": "color",
+      "value": "#858995",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "-dC_Bd4JZ"
       }
     },
     {

@@ -1,0 +1,114 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  background: var(--token-kRHozJO8I);
+  box-shadow: none;
+  filter: none;
+  min-width: 0;
+  padding: 16px;
+}
+.navigationBar:global(.__wab_instance) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0px;
+  max-width: 80rem;
+  object-fit: cover;
+  position: relative;
+  padding: 4px;
+}
+.link__nrWdS {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.img {
+  object-fit: cover;
+  height: 24px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.img__laOO {
+  object-fit: cover;
+}
+.img__laOO > picture > img {
+  object-fit: cover;
+}
+.img__laOO > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.img__qKhTk {
+  object-fit: cover;
+}
+.img__qKhTk > picture > img {
+  object-fit: cover;
+}
+.img__qKhTk > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.link__hvZdk {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__sTl9R {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__mGlbs {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__g9DAs {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__wL80 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__ziamf {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__vv20U {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  background: var(--token-Vi_sjbcnJ);
+  box-shadow: 0px 4px 12px 0px #ffa52059;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
