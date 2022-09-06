@@ -19,9 +19,8 @@
 .heroSection:global(.__wab_instance) {
   position: relative;
   width: 100%;
-  height: 100%;
   min-width: 0;
-  min-height: 0;
+  flex-shrink: 0;
 }
 .peformanceSection:global(.__wab_instance) {
   position: relative;
