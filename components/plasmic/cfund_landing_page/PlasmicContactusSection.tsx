@@ -54,6 +54,7 @@ export const PlasmicContactusSection__ArgProps = new Array<ArgPropType>();
 export type PlasmicContactusSection__OverridesType = {
   root?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
+  h3?: p.Flex<"h3">;
 };
 
 export interface DefaultContactusSectionProps {
@@ -108,8 +109,21 @@ function PlasmicContactusSection__RenderFunc(props: {
             sty.h1
           )}
         >
-          {"News & Article"}
+          {"Need more information?"}
         </h1>
+
+        <h3
+          data-plasmic-name={"h3"}
+          data-plasmic-override={overrides.h3}
+          className={classNames(
+            projectcss.all,
+            projectcss.h3,
+            projectcss.__wab_text,
+            sty.h3
+          )}
+        >
+          {"let's talk with us"}
+        </h3>
 
         {true ? (
           <p.Stack
@@ -152,8 +166,9 @@ function PlasmicContactusSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
-  h1: ["h1"]
+  root: ["root", "h1", "h3"],
+  h1: ["h1"],
+  h3: ["h3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -161,6 +176,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   h1: "h1";
+  h3: "h3";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -225,6 +241,7 @@ export const PlasmicContactusSection = Object.assign(
   {
     // Helper components rendering sub-elements
     h1: makeNodeComponent("h1"),
+    h3: makeNodeComponent("h3"),
 
     // Metadata about props expected for PlasmicContactusSection
     internalVariantProps: PlasmicContactusSection__VariantProps,

@@ -210,7 +210,7 @@ function PlasmicHeroSection__RenderFunc(props: {
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
+                      displayWidth={"100%" as const}
                       loading={"lazy" as const}
                       src={{
                         src: "/plasmic/cfund_landing_page/images/phonePlanetpng2.png",

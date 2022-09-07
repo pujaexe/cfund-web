@@ -585,6 +585,36 @@
           "id": "B2O2XWz4f",
           "name": "close-svgrepo-com (1) 1.svg",
           "filePath": "../public/plasmic/cfund_landing_page/images/closeSvgrepoCom11Svg.svg"
+        },
+        {
+          "id": "AGpDF2iXf",
+          "name": "top-hud-portfolio.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/topHudPortfoliosvg.svg"
+        },
+        {
+          "id": "47kRNFNxe",
+          "name": "bottom-hud-potfolio.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bottomHudPotfoliosvg.svg"
+        },
+        {
+          "id": "fuF6WJ-dE",
+          "name": "top-hud.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/topHudsvg.svg"
+        },
+        {
+          "id": "5ICT6umD2M",
+          "name": "bot-hud.svg",
+          "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg.svg"
+        },
+        {
+          "id": "5k5ZuKiaz",
+          "name": "top-hud.svg 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/topHudsvg2.svg"
+        },
+        {
+          "id": "sUs3xSwIlD",
+          "name": "bot-hud.svg 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg2.svg"
         }
       ],
       "indirect": false,

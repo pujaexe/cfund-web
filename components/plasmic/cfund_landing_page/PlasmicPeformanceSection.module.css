@@ -23,6 +23,7 @@
   width: 100%;
   height: 100%;
   flex-shrink: 1;
+  max-width: 80rem;
   min-width: 0;
   min-height: 0;
   padding: 0px;
@@ -98,15 +99,61 @@
   min-width: 0;
   padding: 8px;
 }
-.freeBox {
-  display: block;
+.container {
+  display: flex;
   position: relative;
-  width: 600px;
-  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 905px;
+  height: 100%;
+  max-width: 600px;
+  left: auto;
+  top: auto;
+  min-height: 0;
+  padding: 0px;
+}
+.freeBox__jlAt2 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
   max-width: 100%;
-  background: var(--token-ug0m5z0a8);
+  background: url("/plasmic/cfund_landing_page/images/topHudsvg2.svg") top 0% left 0% / contain no-repeat;
+  left: 0px;
+  top: 0px;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__oaHio {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 241px;
+  max-width: 100%;
+  background: url("/plasmic/cfund_landing_page/images/botHudsvg2.svg") top 50% left 50% / cover repeat;
+  left: 0px;
+  top: auto;
+  bottom: 0px;
+  min-width: 0;
   flex-shrink: 0;
-  padding: 8px;
+  padding: 0px;
+}
+.freeBox__i1Wa {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 110px 32px 96px;
+}
+.text__ghtEj {
+  position: relative;
+  background: #01e8aa1a;
 }
 .column__yRy0K {
   display: flex;
@@ -129,7 +176,7 @@
   padding-bottom: 2rem;
   min-width: 0;
 }
-.text {
+.text___9T5Vs {
   position: relative;
   width: 100%;
   height: auto;

@@ -38,6 +38,15 @@
   text-align: center;
   min-width: 0;
 }
+.h3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: var(--token-2dOOilx4I);
+  padding-bottom: 2rem;
+  text-align: center;
+  min-width: 0;
+}
 .freeBox__kVuAd {
   flex-direction: row;
   display: flex;
