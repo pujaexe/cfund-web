@@ -121,7 +121,7 @@ function PlasmicFaqSection__RenderFunc(props: {
             sty.h1
           )}
         >
-          {"Need more information?"}
+          {"FAQ"}
         </h1>
 
         <div className={classNames(projectcss.all, sty.freeBox__rpKl)}>
