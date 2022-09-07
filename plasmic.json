@@ -366,6 +366,19 @@
           "cssFilePath": "plasmic/cfund_landing_page/PlasmicContactusSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "2ROA3fsgXu",
+          "name": "HudCard",
+          "type": "managed",
+          "projectId": "CK5Roq2dBGcRPqc72xPE7",
+          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicHudCard.tsx",
+          "importSpec": {
+            "modulePath": "HudCard.tsx"
+          },
+          "cssFilePath": "plasmic/cfund_landing_page/PlasmicHudCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -615,6 +628,26 @@
           "id": "sUs3xSwIlD",
           "name": "bot-hud.svg 2",
           "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg2.svg"
+        },
+        {
+          "id": "0oG3OEJ-N",
+          "name": "top-hud.svg 3",
+          "filePath": "../public/plasmic/cfund_landing_page/images/topHudsvg3.svg"
+        },
+        {
+          "id": "wIh_OVQwb",
+          "name": "bot-hud.svg 3",
+          "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg3.svg"
+        },
+        {
+          "id": "7kbNjDhqMT",
+          "name": "top-hud.svg 4",
+          "filePath": "../public/plasmic/cfund_landing_page/images/topHudsvg4.svg"
+        },
+        {
+          "id": "sZRlYzUV8",
+          "name": "bot-hud.svg 4",
+          "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg4.svg"
         }
       ],
       "indirect": false,

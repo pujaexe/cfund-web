@@ -34,6 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import HudCard from "../../HudCard"; // plasmic-import: 2ROA3fsgXu/component
 
 import { useScreenVariants as useScreenVariants_68So83ItnbSuT } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 68So83itnbSuT/globalVariant
 
@@ -56,8 +57,9 @@ export const PlasmicPeformanceSection__ArgProps = new Array<ArgPropType>();
 export type PlasmicPeformanceSection__OverridesType = {
   root?: p.Flex<"section">;
   columns?: p.Flex<"div">;
-  container?: p.Flex<"div">;
+  hudCard?: p.Flex<typeof HudCard>;
   h1?: p.Flex<"h1">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultPeformanceSectionProps {
@@ -113,29 +115,11 @@ function PlasmicPeformanceSection__RenderFunc(props: {
         className={classNames(projectcss.all, sty.columns)}
       >
         <div className={classNames(projectcss.all, sty.column__k4J02)}>
-          <div
-            data-plasmic-name={"container"}
-            data-plasmic-override={overrides.container}
-            className={classNames(projectcss.all, sty.container)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__jlAt2)} />
-
-            <div className={classNames(projectcss.all, sty.freeBox__oaHio)} />
-
-            <div className={classNames(projectcss.all, sty.freeBox__i1Wa)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ghtEj
-                )}
-              >
-                {
-                  "Our advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n\nOur advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n\nOur advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n"
-                }
-              </div>
-            </div>
-          </div>
+          <HudCard
+            data-plasmic-name={"hudCard"}
+            data-plasmic-override={overrides.hudCard}
+            className={classNames("__wab_instance", sty.hudCard)}
+          />
         </div>
 
         <div className={classNames(projectcss.all, sty.column__yRy0K)}>
@@ -153,10 +137,12 @@ function PlasmicPeformanceSection__RenderFunc(props: {
           </h1>
 
           <div
+            data-plasmic-name={"text"}
+            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text___9T5Vs
+              sty.text
             )}
           >
             {
@@ -170,10 +156,11 @@ function PlasmicPeformanceSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "container", "h1"],
-  columns: ["columns", "container", "h1"],
-  container: ["container"],
-  h1: ["h1"]
+  root: ["root", "columns", "hudCard", "h1", "text"],
+  columns: ["columns", "hudCard", "h1", "text"],
+  hudCard: ["hudCard"],
+  h1: ["h1"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -181,8 +168,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "section";
   columns: "div";
-  container: "div";
+  hudCard: typeof HudCard;
   h1: "h1";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -247,8 +235,9 @@ export const PlasmicPeformanceSection = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
-    container: makeNodeComponent("container"),
+    hudCard: makeNodeComponent("hudCard"),
     h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicPeformanceSection
     internalVariantProps: PlasmicPeformanceSection__VariantProps,
