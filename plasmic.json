@@ -379,6 +379,19 @@
           "cssFilePath": "plasmic/cfund_landing_page/PlasmicHudCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "nzY669KIVI",
+          "name": "FaqSection",
+          "type": "managed",
+          "projectId": "CK5Roq2dBGcRPqc72xPE7",
+          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicFaqSection.tsx",
+          "importSpec": {
+            "modulePath": "FaqSection.tsx"
+          },
+          "cssFilePath": "plasmic/cfund_landing_page/PlasmicFaqSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -406,6 +419,16 @@
           "id": "eA2qX4ZFE2",
           "name": "TelegramSvgrepoCom1SvgIcon",
           "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__TelegramSvgrepoCom1Svg.tsx"
+        },
+        {
+          "id": "WsLCoOnzjJ",
+          "name": "DownSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__DownSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "CMZqPb-CKw",
+          "name": "DownCevronsvgIcon",
+          "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__DownCevronsvg.tsx"
         }
       ],
       "images": [
@@ -648,6 +671,16 @@
           "id": "sZRlYzUV8",
           "name": "bot-hud.svg 4",
           "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg4.svg"
+        },
+        {
+          "id": "_ivhSQiko",
+          "name": "chart-port.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortpng.png"
+        },
+        {
+          "id": "vGYK_Wnha",
+          "name": "chart-port.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortpng2.png"
         }
       ],
       "indirect": false,

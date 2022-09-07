@@ -40,6 +40,7 @@ import PeformanceSection from "../../PeformanceSection"; // plasmic-import: vt5G
 import HowtoSection from "../../HowtoSection"; // plasmic-import: yoOdx6-i_B/component
 import FeeSection from "../../FeeSection"; // plasmic-import: IbDhUVEhV3/component
 import NewsSection from "../../NewsSection"; // plasmic-import: Wd8YFq2Y_h/component
+import FaqSection from "../../FaqSection"; // plasmic-import: nzY669KIVI/component
 import ContactusSection from "../../ContactusSection"; // plasmic-import: jRkQsk9sE1/component
 import Footer from "../../Footer"; // plasmic-import: qVPSIM3pVs/component
 
@@ -66,6 +67,7 @@ export type PlasmicLayout__OverridesType = {
   howtoSection?: p.Flex<typeof HowtoSection>;
   feeSection?: p.Flex<typeof FeeSection>;
   newsSection?: p.Flex<typeof NewsSection>;
+  faqSection?: p.Flex<typeof FaqSection>;
   contactusSection?: p.Flex<typeof ContactusSection>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -147,6 +149,12 @@ function PlasmicLayout__RenderFunc(props: {
         className={classNames("__wab_instance", sty.newsSection)}
       />
 
+      <FaqSection
+        data-plasmic-name={"faqSection"}
+        data-plasmic-override={overrides.faqSection}
+        className={classNames("__wab_instance", sty.faqSection)}
+      />
+
       <ContactusSection
         data-plasmic-name={"contactusSection"}
         data-plasmic-override={overrides.contactusSection}
@@ -171,6 +179,7 @@ const PlasmicDescendants = {
     "howtoSection",
     "feeSection",
     "newsSection",
+    "faqSection",
     "contactusSection",
     "footer"
   ],
@@ -180,6 +189,7 @@ const PlasmicDescendants = {
   howtoSection: ["howtoSection"],
   feeSection: ["feeSection"],
   newsSection: ["newsSection"],
+  faqSection: ["faqSection"],
   contactusSection: ["contactusSection"],
   footer: ["footer"]
 } as const;
@@ -194,6 +204,7 @@ type NodeDefaultElementType = {
   howtoSection: typeof HowtoSection;
   feeSection: typeof FeeSection;
   newsSection: typeof NewsSection;
+  faqSection: typeof FaqSection;
   contactusSection: typeof ContactusSection;
   footer: typeof Footer;
 };
@@ -265,6 +276,7 @@ export const PlasmicLayout = Object.assign(
     howtoSection: makeNodeComponent("howtoSection"),
     feeSection: makeNodeComponent("feeSection"),
     newsSection: makeNodeComponent("newsSection"),
+    faqSection: makeNodeComponent("faqSection"),
     contactusSection: makeNodeComponent("contactusSection"),
     footer: makeNodeComponent("footer"),
 

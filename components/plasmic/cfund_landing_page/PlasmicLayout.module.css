@@ -34,6 +34,9 @@
 .newsSection:global(.__wab_instance) {
   position: relative;
 }
+.faqSection:global(.__wab_instance) {
+  position: relative;
+}
 .contactusSection:global(.__wab_instance) {
   position: relative;
 }

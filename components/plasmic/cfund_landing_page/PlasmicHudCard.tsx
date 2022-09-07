@@ -56,7 +56,7 @@ export type PlasmicHudCard__OverridesType = {
   hudBottom?: p.Flex<"div">;
   contentContainer?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
-  text?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultHudCardProps {
@@ -123,19 +123,25 @@ function PlasmicHudCard__RenderFunc(props: {
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
           >
-            <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text
-              )}
-            >
-              {
-                "Our advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n\nOur advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n\nOur advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss.\n"
-              }
-            </div>
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/cfund_landing_page/images/chartPortpng2.png",
+                fullWidth: 537,
+                fullHeight: 392,
+                aspectRatio: undefined
+              }}
+            />
           </div>
         ) : null}
       </div>
@@ -144,12 +150,12 @@ function PlasmicHudCard__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "hudTop", "hudBottom", "contentContainer", "freeBox", "text"],
+  root: ["root", "hudTop", "hudBottom", "contentContainer", "freeBox", "img"],
   hudTop: ["hudTop"],
   hudBottom: ["hudBottom"],
-  contentContainer: ["contentContainer", "freeBox", "text"],
-  freeBox: ["freeBox", "text"],
-  text: ["text"]
+  contentContainer: ["contentContainer", "freeBox", "img"],
+  freeBox: ["freeBox", "img"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -160,7 +166,7 @@ type NodeDefaultElementType = {
   hudBottom: "div";
   contentContainer: "div";
   freeBox: "div";
-  text: "div";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -228,7 +234,7 @@ export const PlasmicHudCard = Object.assign(
     hudBottom: makeNodeComponent("hudBottom"),
     contentContainer: makeNodeComponent("contentContainer"),
     freeBox: makeNodeComponent("freeBox"),
-    text: makeNodeComponent("text"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHudCard
     internalVariantProps: PlasmicHudCard__VariantProps,

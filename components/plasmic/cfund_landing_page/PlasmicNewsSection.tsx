@@ -59,7 +59,7 @@ export type PlasmicNewsSection__OverridesType = {
   item2?: p.Flex<"div">;
   item3?: p.Flex<"div">;
   item4?: p.Flex<"div">;
-  h6?: p.Flex<"h6">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNewsSectionProps {
@@ -162,31 +162,34 @@ function PlasmicNewsSection__RenderFunc(props: {
         </div>
       </div>
 
-      <h6
-        data-plasmic-name={"h6"}
-        data-plasmic-override={overrides.h6}
+      <p.PlasmicLink
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
         className={classNames(
           projectcss.all,
-          projectcss.h6,
+          projectcss.a,
           projectcss.__wab_text,
-          sty.h6
+          sty.link
         )}
+        component={Link}
+        href={"/" as const}
+        platform={"nextjs"}
       >
-        {"See More News"}
-      </h6>
+        {"Chat with Us"}
+      </p.PlasmicLink>
     </section>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "freeBox", "item", "item2", "item3", "item4", "h6"],
+  root: ["root", "h1", "freeBox", "item", "item2", "item3", "item4", "link"],
   h1: ["h1"],
   freeBox: ["freeBox", "item", "item2", "item3", "item4"],
   item: ["item"],
   item2: ["item2"],
   item3: ["item3"],
   item4: ["item4"],
-  h6: ["h6"]
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -199,7 +202,7 @@ type NodeDefaultElementType = {
   item2: "div";
   item3: "div";
   item4: "div";
-  h6: "h6";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -269,7 +272,7 @@ export const PlasmicNewsSection = Object.assign(
     item2: makeNodeComponent("item2"),
     item3: makeNodeComponent("item3"),
     item4: makeNodeComponent("item4"),
-    h6: makeNodeComponent("h6"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicNewsSection
     internalVariantProps: PlasmicNewsSection__VariantProps,

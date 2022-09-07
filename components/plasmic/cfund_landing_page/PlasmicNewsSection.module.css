@@ -149,14 +149,13 @@
 .img___5Keuz > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.h6 {
-  position: relative;
-  width: 100%;
+.link {
+  width: auto;
   height: auto;
-  max-width: 80rem;
-  color: var(--token-2dOOilx4I);
-  padding-bottom: 0rem;
-  text-align: center;
-  padding-top: 2rem;
-  min-width: 0;
+  max-width: 800px;
+  background: var(--token-Vi_sjbcnJ);
+  box-shadow: 0px 4px 12px 0px #ffa52059;
+  margin-top: 32px;
+  border-radius: 8px;
+  padding: 8px 16px;
 }
