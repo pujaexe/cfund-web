@@ -152,7 +152,11 @@ function PlasmicFeeSection__RenderFunc(props: {
             displayMaxWidth={"100%" as const}
             displayMinHeight={"0" as const}
             displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("80%" as const)
+                : ("auto" as const)
+            }
             loading={"lazy" as const}
             src={{
               src: "/plasmic/cfund_landing_page/images/cycleIluustrationpng.png",
