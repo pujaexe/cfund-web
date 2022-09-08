@@ -147,6 +147,9 @@
   object-fit: cover;
   max-width: 100%;
   height: 55px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
 }
 .img__olGvT > picture > img {
   object-fit: cover;

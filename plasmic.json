@@ -429,6 +429,16 @@
           "id": "CMZqPb-CKw",
           "name": "DownCevronsvgIcon",
           "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__DownCevronsvg.tsx"
+        },
+        {
+          "id": "Fv9ig3w75f",
+          "name": "ChatSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__ChatSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "PrpJCP86KL",
+          "name": "MailSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/cfund_landing_page/icons/PlasmicIcon__MailSvgrepoComsvg.tsx"
         }
       ],
       "images": [
@@ -721,6 +731,36 @@
           "id": "hpmZS4a1m",
           "name": "aum-icon.png 3",
           "filePath": "../public/plasmic/cfund_landing_page/images/aumIconpng3.png"
+        },
+        {
+          "id": "SMe8an8Bm",
+          "name": "cycle-iluustration.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/cycleIluustrationpng.png"
+        },
+        {
+          "id": "U0Sy_b4QP",
+          "name": "bg-fee.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bgFeepng.png"
+        },
+        {
+          "id": "Dy_OtfHXL",
+          "name": "bg-fee.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bgFeepng2.png"
+        },
+        {
+          "id": "O9_GNhuIC",
+          "name": "bg-contact.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bgContactpng.png"
+        },
+        {
+          "id": "prWqQbiW1",
+          "name": "bg-contact.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bgContactpng2.png"
+        },
+        {
+          "id": "zTdnPqPKt",
+          "name": "chart-port-juni.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortJunipng.png"
         }
       ],
       "indirect": false,

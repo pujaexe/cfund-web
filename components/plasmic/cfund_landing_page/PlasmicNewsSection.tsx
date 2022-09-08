@@ -175,7 +175,7 @@ function PlasmicNewsSection__RenderFunc(props: {
         href={"/" as const}
         platform={"nextjs"}
       >
-        {"Chat with Us"}
+        {"See All News"}
       </p.PlasmicLink>
     </section>
   ) as React.ReactElement | null;

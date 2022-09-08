@@ -40,6 +40,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_cfund_landing_page.module.css"; // plasmic-import: CK5Roq2dBGcRPqc72xPE7/projectcss
 import sty from "./PlasmicContactusSection.module.css"; // plasmic-import: jRkQsk9sE1/css
 
+import ChatSvgrepoComsvgIcon from "./icons/PlasmicIcon__ChatSvgrepoComsvg"; // plasmic-import: Fv9ig3w75f/icon
+import MailSvgrepoComsvgIcon from "./icons/PlasmicIcon__MailSvgrepoComsvg"; // plasmic-import: PrpJCP86KL/icon
+
 export type PlasmicContactusSection__VariantMembers = {};
 
 export type PlasmicContactusSection__VariantsArgs = {};
@@ -131,33 +134,61 @@ function PlasmicContactusSection__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__kVuAd)}
           >
-            <p.PlasmicLink
+            <p.Stack
+              as={p.PlasmicLink}
+              hasGap={true}
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                projectcss.__wab_text,
                 sty.link___177Vx
               )}
               component={Link}
               href={"/" as const}
               platform={"nextjs"}
             >
-              {"Chat with Us"}
-            </p.PlasmicLink>
+              <ChatSvgrepoComsvgIcon
+                className={classNames(projectcss.all, sty.svg__zfeN0)}
+                role={"img"}
+              />
 
-            <p.PlasmicLink
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ihBtk
+                )}
+              >
+                {"Chat with Us"}
+              </div>
+            </p.Stack>
+
+            <p.Stack
+              as={p.PlasmicLink}
+              hasGap={true}
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                projectcss.__wab_text,
                 sty.link__xNymu
               )}
               component={Link}
               href={"/" as const}
               platform={"nextjs"}
             >
-              {"Send Email"}
-            </p.PlasmicLink>
+              <MailSvgrepoComsvgIcon
+                className={classNames(projectcss.all, sty.svg__r0W0J)}
+                role={"img"}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__cm2I
+                )}
+              >
+                {"Send Email"}
+              </div>
+            </p.Stack>
           </p.Stack>
         ) : null}
       </div>

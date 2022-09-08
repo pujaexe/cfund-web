@@ -50,19 +50,22 @@ export type PlasmicNewsCard__ArgsType = {
   children?: React.ReactNode;
   slot?: React.ReactNode;
   newsImage?: React.ReactNode;
+  date?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicNewsCard__ArgsType;
 export const PlasmicNewsCard__ArgProps = new Array<ArgPropType>(
   "children",
   "slot",
-  "newsImage"
+  "newsImage",
+  "date"
 );
 
 export type PlasmicNewsCard__OverridesType = {
   root?: p.Flex<"div">;
   cardContent?: p.Flex<"div">;
   newsTitle?: p.Flex<"h5">;
+  date?: p.Flex<"div">;
   description?: p.Flex<"p">;
 };
 
@@ -70,6 +73,7 @@ export interface DefaultNewsCardProps {
   children?: React.ReactNode;
   slot?: React.ReactNode;
   newsImage?: React.ReactNode;
+  date?: React.ReactNode;
   className?: string;
 }
 
@@ -153,6 +157,18 @@ function PlasmicNewsCard__RenderFunc(props: {
           })}
         </h5>
 
+        <div
+          data-plasmic-name={"date"}
+          data-plasmic-override={overrides.date}
+          className={classNames(projectcss.all, sty.date)}
+        >
+          {p.renderPlasmicSlot({
+            defaultContents: "13 February 2022",
+            value: args.date,
+            className: classNames(sty.slotTargetDate)
+          })}
+        </div>
+
         <p
           data-plasmic-name={"description"}
           data-plasmic-override={overrides.description}
@@ -170,9 +186,10 @@ function PlasmicNewsCard__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "cardContent", "newsTitle", "description"],
-  cardContent: ["cardContent", "newsTitle", "description"],
+  root: ["root", "cardContent", "newsTitle", "date", "description"],
+  cardContent: ["cardContent", "newsTitle", "date", "description"],
   newsTitle: ["newsTitle"],
+  date: ["date"],
   description: ["description"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -182,6 +199,7 @@ type NodeDefaultElementType = {
   root: "div";
   cardContent: "div";
   newsTitle: "h5";
+  date: "div";
   description: "p";
 };
 
@@ -248,6 +266,7 @@ export const PlasmicNewsCard = Object.assign(
     // Helper components rendering sub-elements
     cardContent: makeNodeComponent("cardContent"),
     newsTitle: makeNodeComponent("newsTitle"),
+    date: makeNodeComponent("date"),
     description: makeNodeComponent("description"),
 
     // Metadata about props expected for PlasmicNewsCard

@@ -60,6 +60,7 @@ export type PlasmicPeformanceSection__OverridesType = {
   hudCard?: p.Flex<typeof HudCard>;
   h1?: p.Flex<"h1">;
   text?: p.Flex<"div">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultPeformanceSectionProps {
@@ -146,9 +147,25 @@ function PlasmicPeformanceSection__RenderFunc(props: {
             )}
           >
             {
-              "Our advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend.\nDigital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss."
+              "Our advanced risk management strategy allowed us to be consistently profitable during both uptrend and downtrend. Digital assets such can provide highly lucrative return, yet they are much more volatile and possess higher risk compared to traditional asset classes. CFund manages your capital with rigorous position sizing, advanced trading strategy, and a conservative stop loss."
             }
           </div>
+
+          <p.PlasmicLink
+            data-plasmic-name={"link"}
+            data-plasmic-override={overrides.link}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link
+            )}
+            component={Link}
+            href={"/" as const}
+            platform={"nextjs"}
+          >
+            {"See Performance"}
+          </p.PlasmicLink>
         </div>
       </p.Stack>
     </section>
@@ -156,11 +173,12 @@ function PlasmicPeformanceSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "hudCard", "h1", "text"],
-  columns: ["columns", "hudCard", "h1", "text"],
+  root: ["root", "columns", "hudCard", "h1", "text", "link"],
+  columns: ["columns", "hudCard", "h1", "text", "link"],
   hudCard: ["hudCard"],
   h1: ["h1"],
-  text: ["text"]
+  text: ["text"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -171,6 +189,7 @@ type NodeDefaultElementType = {
   hudCard: typeof HudCard;
   h1: "h1";
   text: "div";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -238,6 +257,7 @@ export const PlasmicPeformanceSection = Object.assign(
     hudCard: makeNodeComponent("hudCard"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicPeformanceSection
     internalVariantProps: PlasmicPeformanceSection__VariantProps,

@@ -57,7 +57,7 @@ export type PlasmicFeeSection__OverridesType = {
   feeContainer?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   text?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultFeeSectionProps {
@@ -142,10 +142,24 @@ function PlasmicFeeSection__RenderFunc(props: {
         </div>
 
         <div className={classNames(projectcss.all, sty.column__f4M0W)}>
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
+          <p.PlasmicImg
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"auto" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"auto" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/cfund_landing_page/images/cycleIluustrationpng.png",
+              fullWidth: 637,
+              fullHeight: 548,
+              aspectRatio: undefined
+            }}
           />
         </div>
       </p.Stack>
@@ -154,11 +168,11 @@ function PlasmicFeeSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "feeContainer", "h1", "text", "freeBox"],
-  feeContainer: ["feeContainer", "h1", "text", "freeBox"],
+  root: ["root", "feeContainer", "h1", "text", "img"],
+  feeContainer: ["feeContainer", "h1", "text", "img"],
   h1: ["h1"],
   text: ["text"],
-  freeBox: ["freeBox"]
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -168,7 +182,7 @@ type NodeDefaultElementType = {
   feeContainer: "div";
   h1: "h1";
   text: "div";
-  freeBox: "div";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -235,7 +249,7 @@ export const PlasmicFeeSection = Object.assign(
     feeContainer: makeNodeComponent("feeContainer"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
-    freeBox: makeNodeComponent("freeBox"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicFeeSection
     internalVariantProps: PlasmicFeeSection__VariantProps,
