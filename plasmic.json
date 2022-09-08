@@ -681,6 +681,46 @@
           "id": "vGYK_Wnha",
           "name": "chart-port.png 2",
           "filePath": "../public/plasmic/cfund_landing_page/images/chartPortpng2.png"
+        },
+        {
+          "id": "xrxeLpWn-",
+          "name": "identity.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/identitypng.png"
+        },
+        {
+          "id": "74HK9Kwb8",
+          "name": "agreement.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/agreementpng.png"
+        },
+        {
+          "id": "05JpFtjWx",
+          "name": "aum-icon.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/aumIconpng.png"
+        },
+        {
+          "id": "HM1NMUBVE",
+          "name": "identity.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/identitypng2.png"
+        },
+        {
+          "id": "lzp9OPDZN",
+          "name": "agreement.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/agreementpng2.png"
+        },
+        {
+          "id": "EqbHaJmRs",
+          "name": "aum-icon.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/aumIconpng2.png"
+        },
+        {
+          "id": "K56yVfQPb",
+          "name": "bg-2.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/bg2Png.png"
+        },
+        {
+          "id": "hpmZS4a1m",
+          "name": "aum-icon.png 3",
+          "filePath": "../public/plasmic/cfund_landing_page/images/aumIconpng3.png"
         }
       ],
       "indirect": false,
@@ -776,6 +816,12 @@
         "name": "Screen",
         "projectId": "CK5Roq2dBGcRPqc72xPE7",
         "contextFilePath": "plasmic/cfund_landing_page/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "UntG1uo25b",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "contextFilePath": "plasmic/cfund_landing_page/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.tsx"
       }
     ]
   },

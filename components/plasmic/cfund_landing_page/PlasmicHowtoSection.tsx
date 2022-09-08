@@ -139,7 +139,29 @@ function PlasmicHowtoSection__RenderFunc(props: {
         hasGap={true}
         className={classNames(projectcss.all, sty.columns)}
       >
-        <div className={classNames(projectcss.all, sty.column__lkj99)}>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.column__lkj99)}
+        >
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__im0Cv)}
+            displayHeight={"auto" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"15rem" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/cfund_landing_page/images/identitypng2.png",
+              fullWidth: 464,
+              fullHeight: 466,
+              aspectRatio: undefined
+            }}
+          />
+
           <h5
             className={classNames(
               projectcss.all,
@@ -148,7 +170,7 @@ function PlasmicHowtoSection__RenderFunc(props: {
               sty.h5__vzCuj
             )}
           >
-            {"REGISTRATION AND IDENTIFICATION"}
+            {"Registration and Identification"}
           </h5>
 
           <div
@@ -159,12 +181,34 @@ function PlasmicHowtoSection__RenderFunc(props: {
             )}
           >
             {
-              "Prospective customers can contact us to have a consultation whether investing in digital asset with us aligns with their risk appetite, financial profile, and investment objective.\nOne they are successfully evaluated and their eligibility confirmed, we will provide them detailed information about the investment."
+              "Prospective customers can contact us to have a consultation whether investing in digital asset with us aligns with their risk appetite, financial profile, and investment objective. One they are successfully evaluated and their eligibility confirmed, we will provide them detailed information about the investment."
             }
           </div>
-        </div>
+        </p.Stack>
 
-        <div className={classNames(projectcss.all, sty.column__uBxE)}>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.column__uBxE)}
+        >
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__in0BE)}
+            displayHeight={"auto" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"15rem" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/cfund_landing_page/images/agreementpng2.png",
+              fullWidth: 466,
+              fullHeight: 466,
+              aspectRatio: undefined
+            }}
+          />
+
           <h5
             className={classNames(
               projectcss.all,
@@ -173,7 +217,7 @@ function PlasmicHowtoSection__RenderFunc(props: {
               sty.h5__dQxRk
             )}
           >
-            {"PRODUCT SELECTION AND AGREEMENT"}
+            {"Product Selection and Agreement"}
           </h5>
 
           <div
@@ -184,12 +228,34 @@ function PlasmicHowtoSection__RenderFunc(props: {
             )}
           >
             {
-              "The next step is to formulate a contractual agreement between CFund and the investor.\nThe investor may select the desired investment product that fit their objective. They will also be informed about the condition, performance objectives, as well as the risk involved.\nFinally, an agreement between CFund and the investor will be signed under a prepared contract.\nFinally, the contract between the investor and ARK36 is prepared and signed."
+              "The next step is to formulate a contractual agreement between CFund and the investor. The investor may select the desired investment product that fit their objective. They will also be informed about the condition, performance objectives, as well as the risk involved. Finally, an agreement between CFund and the investor will be signed under a prepared contract. Finally, the contract between the investor and ARK36 is prepared and signed."
             }
           </div>
-        </div>
+        </p.Stack>
 
-        <div className={classNames(projectcss.all, sty.column__gq2Pn)}>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.column__gq2Pn)}
+        >
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__fh0Ig)}
+            displayHeight={"auto" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"15rem" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/cfund_landing_page/images/aumIconpng3.png",
+              fullWidth: 464,
+              fullHeight: 474,
+              aspectRatio: undefined
+            }}
+          />
+
           <h5
             className={classNames(
               projectcss.all,
@@ -198,7 +264,7 @@ function PlasmicHowtoSection__RenderFunc(props: {
               sty.h5___2DUsE
             )}
           >
-            {"ASEETS UNDER MANAGEMENT"}
+            {"Aseets Under Management"}
           </h5>
 
           <div
@@ -209,10 +275,10 @@ function PlasmicHowtoSection__RenderFunc(props: {
             )}
           >
             {
-              "Once all the paperwork is signed, the investor can deposit their investment. Deposits can be made in fiat or cryptocurrencies. Hence, the fund management starts.\nThe investor will now receive access to a periodic report to keep track of their investment's performance."
+              "Once all the paperwork is signed, the investor can deposit their investment. Deposits can be made in fiat or cryptocurrencies. Hence, the fund management starts. The investor will now receive access to a periodic report to keep track of their investment's performance."
             }
           </div>
-        </div>
+        </p.Stack>
       </p.Stack>
     </p.Stack>
   ) as React.ReactElement | null;

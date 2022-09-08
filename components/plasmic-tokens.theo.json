@@ -121,6 +121,16 @@
       }
     },
     {
+      "name": "green-halu2",
+      "type": "color",
+      "value": "#01E8AA",
+      "category": "color",
+      "meta": {
+        "projectId": "CK5Roq2dBGcRPqc72xPE7",
+        "id": "QSBvCUuE3"
+      }
+    },
+    {
       "name": "grey",
       "type": "color",
       "value": "#858995",

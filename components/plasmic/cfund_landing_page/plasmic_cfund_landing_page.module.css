@@ -13,6 +13,8 @@
   --plasmic-token-white: var(--token-2dOOilx4I);
   --token-SE2Tchhzh: #11d2c8;
   --plasmic-token-green-halu: var(--token-SE2Tchhzh);
+  --token-QSBvCUuE3: #01e8aa;
+  --plasmic-token-green-halu-2: var(--token-QSBvCUuE3);
   --token-fL0fdHD2P: #41c345;
   --plasmic-token-green: var(--token-fL0fdHD2P);
   --token-Vi_sjbcnJ: #ffa520;
@@ -31,7 +33,8 @@
   --plasmic-token-purple-grey: var(--token-b_98UoxNi);
 }
 
-.plasmic_default_styles {
+.plasmic_default_styles,
+.plasmic_default_styles:where(.global_unnamedGlobalGroupOfVariants_unnamedVariant) {
   --mixin-6CxJvsecLVmY_font-family: "Poppins";
   --mixin-6CxJvsecLVmY_font-size: 16px;
   --mixin-6CxJvsecLVmY_font-weight: 400;
