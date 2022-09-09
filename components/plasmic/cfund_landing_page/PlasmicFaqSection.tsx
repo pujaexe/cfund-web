@@ -161,7 +161,7 @@ function PlasmicFaqSection__RenderFunc(props: {
                   sty.text__i1HB
                 )}
               >
-                {"How To Register account on Cfund"}
+                {"How To Verify your identity on Cfund"}
               </div>
 
               <DownCevronsvgIcon
