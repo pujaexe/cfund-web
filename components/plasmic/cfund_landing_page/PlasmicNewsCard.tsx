@@ -47,16 +47,16 @@ type VariantPropType = keyof PlasmicNewsCard__VariantsArgs;
 export const PlasmicNewsCard__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicNewsCard__ArgsType = {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
   newsImage?: React.ReactNode;
   date?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicNewsCard__ArgsType;
 export const PlasmicNewsCard__ArgProps = new Array<ArgPropType>(
-  "children",
-  "slot",
+  "title",
+  "description",
   "newsImage",
   "date"
 );
@@ -70,8 +70,8 @@ export type PlasmicNewsCard__OverridesType = {
 };
 
 export interface DefaultNewsCardProps {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
   newsImage?: React.ReactNode;
   date?: React.ReactNode;
   className?: string;
@@ -152,8 +152,8 @@ function PlasmicNewsCard__RenderFunc(props: {
         >
           {p.renderPlasmicSlot({
             defaultContents: "This is News Title",
-            value: args.children,
-            className: classNames(sty.slotTargetChildren)
+            value: args.title,
+            className: classNames(sty.slotTargetTitle)
           })}
         </h5>
 
@@ -177,7 +177,7 @@ function PlasmicNewsCard__RenderFunc(props: {
           {p.renderPlasmicSlot({
             defaultContents:
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-            value: args.slot
+            value: args.description
           })}
         </p>
       </p.Stack>

@@ -138,6 +138,7 @@ function PlasmicNewsSection__RenderFunc(props: {
         >
           <NewsCard
             className={classNames("__wab_instance", sty.newsCard___2E64A)}
+            title={"This is News Title"}
           />
         </div>
 

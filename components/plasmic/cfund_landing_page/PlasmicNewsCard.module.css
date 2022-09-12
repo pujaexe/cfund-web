@@ -68,7 +68,7 @@
   flex-direction: row;
   min-width: 0;
 }
-.slotTargetChildren {
+.slotTargetTitle {
   color: var(--token-2dOOilx4I);
 }
 .date {
