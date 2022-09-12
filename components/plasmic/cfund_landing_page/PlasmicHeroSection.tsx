@@ -137,7 +137,7 @@ function PlasmicHeroSection__RenderFunc(props: {
                 )}
               >
                 {
-                  "Crypto investing becomes safer, easier and more effective for investors with exposure to the high-risk high-reward crypto market with a customized strategy by Professionals Digital Asset Manager"
+                  "Our customized strategy makes crypto investing safer, easier, and more effective for you"
                 }
               </div>
 

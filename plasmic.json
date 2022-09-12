@@ -683,16 +683,6 @@
           "filePath": "../public/plasmic/cfund_landing_page/images/botHudsvg4.svg"
         },
         {
-          "id": "_ivhSQiko",
-          "name": "chart-port.png",
-          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortpng.png"
-        },
-        {
-          "id": "vGYK_Wnha",
-          "name": "chart-port.png 2",
-          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortpng2.png"
-        },
-        {
           "id": "xrxeLpWn-",
           "name": "identity.png",
           "filePath": "../public/plasmic/cfund_landing_page/images/identitypng.png"
@@ -758,9 +748,24 @@
           "filePath": "../public/plasmic/cfund_landing_page/images/bgContactpng2.png"
         },
         {
-          "id": "zTdnPqPKt",
-          "name": "chart-port-juni.png",
-          "filePath": "../public/plasmic/cfund_landing_page/images/chartPortJunipng.png"
+          "id": "0KPc11IgI",
+          "name": "chart.png",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartpng.png"
+        },
+        {
+          "id": "E21yVBGnJ",
+          "name": "chart.png 2",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartpng2.png"
+        },
+        {
+          "id": "EdfLKYkCT",
+          "name": "chart.png 3",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartpng3.png"
+        },
+        {
+          "id": "vfbOcplWG",
+          "name": "chart.png 4",
+          "filePath": "../public/plasmic/cfund_landing_page/images/chartpng4.png"
         }
       ],
       "indirect": false,

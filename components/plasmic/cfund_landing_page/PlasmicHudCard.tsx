@@ -55,6 +55,7 @@ export type PlasmicHudCard__OverridesType = {
   hudTop?: p.Flex<"div">;
   hudBottom?: p.Flex<"div">;
   contentContainer?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
 };
 
@@ -117,7 +118,11 @@ function PlasmicHudCard__RenderFunc(props: {
         className={classNames(projectcss.all, sty.contentContainer)}
       >
         {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__ydfQb)}>
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
             <p.PlasmicImg
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
@@ -131,60 +136,12 @@ function PlasmicHudCard__RenderFunc(props: {
               displayWidth={"auto" as const}
               loading={"lazy" as const}
               src={{
-                src: "/plasmic/cfund_landing_page/images/chartPortJunipng.png",
-                fullWidth: 537,
-                fullHeight: 310,
+                src: "/plasmic/cfund_landing_page/images/chartpng4.png",
+                fullWidth: 600,
+                fullHeight: 444,
                 aspectRatio: undefined
               }}
             />
-
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__qGoih)}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__uAm2M
-                )}
-                component={Link}
-                href={"/" as const}
-                platform={"nextjs"}
-              >
-                {"June"}
-              </p.PlasmicLink>
-
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__yXgvX
-                )}
-                component={Link}
-                href={"/" as const}
-                platform={"nextjs"}
-              >
-                {"July"}
-              </p.PlasmicLink>
-
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__u3Uei
-                )}
-                component={Link}
-                href={"/" as const}
-                platform={"nextjs"}
-              >
-                {"August"}
-              </p.PlasmicLink>
-            </p.Stack>
           </div>
         ) : null}
       </div>
@@ -193,10 +150,11 @@ function PlasmicHudCard__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "hudTop", "hudBottom", "contentContainer", "img"],
+  root: ["root", "hudTop", "hudBottom", "contentContainer", "freeBox", "img"],
   hudTop: ["hudTop"],
   hudBottom: ["hudBottom"],
-  contentContainer: ["contentContainer", "img"],
+  contentContainer: ["contentContainer", "freeBox", "img"],
+  freeBox: ["freeBox", "img"],
   img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -207,6 +165,7 @@ type NodeDefaultElementType = {
   hudTop: "div";
   hudBottom: "div";
   contentContainer: "div";
+  freeBox: "div";
   img: typeof p.PlasmicImg;
 };
 
@@ -274,6 +233,7 @@ export const PlasmicHudCard = Object.assign(
     hudTop: makeNodeComponent("hudTop"),
     hudBottom: makeNodeComponent("hudBottom"),
     contentContainer: makeNodeComponent("contentContainer"),
+    freeBox: makeNodeComponent("freeBox"),
     img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHudCard

@@ -164,7 +164,7 @@ function PlasmicPeformanceSection__RenderFunc(props: {
             href={"/" as const}
             platform={"nextjs"}
           >
-            {"See Performance"}
+            {"See Performance Detail"}
           </p.PlasmicLink>
         </div>
       </p.Stack>
