@@ -262,7 +262,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.link__vv20U
               )}
               component={Link}
-              href={"/" as const}
+              href={`/login`}
               platform={"nextjs"}
             >
               {"Login"}

@@ -34,13 +34,12 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import CardQa from "../../CardQa"; // plasmic-import: Jgzn7LQkpI/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cfund_landing_page.module.css"; // plasmic-import: CK5Roq2dBGcRPqc72xPE7/projectcss
 import sty from "./PlasmicFaqSection.module.css"; // plasmic-import: nzY669KIVI/css
-
-import DownCevronsvgIcon from "./icons/PlasmicIcon__DownCevronsvg"; // plasmic-import: CMZqPb-CKw/icon
 
 export type PlasmicFaqSection__VariantMembers = {};
 
@@ -54,13 +53,9 @@ export const PlasmicFaqSection__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFaqSection__OverridesType = {
   root?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
-  cardQa?: p.Flex<"div">;
-  cardQa2?: p.Flex<"div">;
-  cardQa3?: p.Flex<"div">;
-  cardQa4?: p.Flex<"div">;
-  cardQa5?: p.Flex<"div">;
-  cardQa6?: p.Flex<"div">;
+  columns?: p.Flex<"div">;
 };
 
 export interface DefaultFaqSectionProps {
@@ -108,8 +103,10 @@ function PlasmicFaqSection__RenderFunc(props: {
     >
       <p.Stack
         as={"div"}
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__dLpc)}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         <h1
           data-plasmic-name={"h1"}
@@ -124,144 +121,54 @@ function PlasmicFaqSection__RenderFunc(props: {
           {"FAQ"}
         </h1>
 
-        <div className={classNames(projectcss.all, sty.freeBox__rpKl)}>
-          <div className={classNames(projectcss.all, sty.freeBox___66Gzg)}>
-            <div
-              data-plasmic-name={"cardQa"}
-              data-plasmic-override={overrides.cardQa}
-              className={classNames(projectcss.all, sty.cardQa)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__npkJb
-                )}
-              >
-                {"How To Register account on Cfund"}
-              </div>
+        <div
+          data-plasmic-name={"columns"}
+          data-plasmic-override={overrides.columns}
+          className={classNames(projectcss.all, sty.columns)}
+        >
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column___9Mc1W)}
+          >
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__cqnlu)}
+            />
 
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg__xNEib)}
-                role={"img"}
-              />
-            </div>
-          </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__oQhrC)}
+            />
 
-          <div className={classNames(projectcss.all, sty.freeBox__eLdUl)}>
-            <div
-              data-plasmic-name={"cardQa2"}
-              data-plasmic-override={overrides.cardQa2}
-              className={classNames(projectcss.all, sty.cardQa2)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__i1HB
-                )}
-              >
-                {"How To Verify your identity on Cfund"}
-              </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa___5VVw0)}
+            />
 
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg___2X5Mr)}
-                role={"img"}
-              />
-            </div>
-          </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__rqeOe)}
+            />
+          </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox__c3Rp6)}>
-            <div
-              data-plasmic-name={"cardQa3"}
-              data-plasmic-override={overrides.cardQa3}
-              className={classNames(projectcss.all, sty.cardQa3)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__kZ3G
-                )}
-              >
-                {"How To Register account on Cfund"}
-              </div>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column__vDdus)}
+          >
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__y2FOs)}
+            />
 
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg___2SuCa)}
-                role={"img"}
-              />
-            </div>
-          </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__hMpnA)}
+            />
 
-          <div className={classNames(projectcss.all, sty.freeBox__nb9Tk)}>
-            <div
-              data-plasmic-name={"cardQa4"}
-              data-plasmic-override={overrides.cardQa4}
-              className={classNames(projectcss.all, sty.cardQa4)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__gNUvk
-                )}
-              >
-                {"How To Register account on Cfund"}
-              </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__xNtYo)}
+            />
 
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg___1Db9I)}
-                role={"img"}
-              />
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox___1RDQ)}>
-            <div
-              data-plasmic-name={"cardQa5"}
-              data-plasmic-override={overrides.cardQa5}
-              className={classNames(projectcss.all, sty.cardQa5)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__lgcMr
-                )}
-              >
-                {"How To Register account on Cfund"}
-              </div>
-
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg__y4X72)}
-                role={"img"}
-              />
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__e8Y9)}>
-            <div
-              data-plasmic-name={"cardQa6"}
-              data-plasmic-override={overrides.cardQa6}
-              className={classNames(projectcss.all, sty.cardQa6)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__fhC3B
-                )}
-              >
-                {"How To Register account on Cfund"}
-              </div>
-
-              <DownCevronsvgIcon
-                className={classNames(projectcss.all, sty.svg__eI104)}
-                role={"img"}
-              />
-            </div>
-          </div>
+            <CardQa
+              className={classNames("__wab_instance", sty.cardQa__p61Iz)}
+            />
+          </p.Stack>
         </div>
       </p.Stack>
     </p.Stack>
@@ -269,36 +176,19 @@ function PlasmicFaqSection__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "h1",
-    "cardQa",
-    "cardQa2",
-    "cardQa3",
-    "cardQa4",
-    "cardQa5",
-    "cardQa6"
-  ],
+  root: ["root", "freeBox", "h1", "columns"],
+  freeBox: ["freeBox", "h1", "columns"],
   h1: ["h1"],
-  cardQa: ["cardQa"],
-  cardQa2: ["cardQa2"],
-  cardQa3: ["cardQa3"],
-  cardQa4: ["cardQa4"],
-  cardQa5: ["cardQa5"],
-  cardQa6: ["cardQa6"]
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
   h1: "h1";
-  cardQa: "div";
-  cardQa2: "div";
-  cardQa3: "div";
-  cardQa4: "div";
-  cardQa5: "div";
-  cardQa6: "div";
+  columns: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -362,13 +252,9 @@ export const PlasmicFaqSection = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
-    cardQa: makeNodeComponent("cardQa"),
-    cardQa2: makeNodeComponent("cardQa2"),
-    cardQa3: makeNodeComponent("cardQa3"),
-    cardQa4: makeNodeComponent("cardQa4"),
-    cardQa5: makeNodeComponent("cardQa5"),
-    cardQa6: makeNodeComponent("cardQa6"),
+    columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicFaqSection
     internalVariantProps: PlasmicFaqSection__VariantProps,

@@ -161,7 +161,7 @@ function PlasmicPeformanceSection__RenderFunc(props: {
               sty.link
             )}
             component={Link}
-            href={"/" as const}
+            href={`/login`}
             platform={"nextjs"}
           >
             {"See Performance Detail"}

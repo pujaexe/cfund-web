@@ -392,6 +392,45 @@
           "cssFilePath": "plasmic/cfund_landing_page/PlasmicFaqSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Jgzn7LQkpI",
+          "name": "CardQa",
+          "type": "managed",
+          "projectId": "CK5Roq2dBGcRPqc72xPE7",
+          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicCardQa.tsx",
+          "importSpec": {
+            "modulePath": "CardQa.tsx"
+          },
+          "cssFilePath": "plasmic/cfund_landing_page/PlasmicCardQa.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Kp3Vy8I_6u",
+          "name": "QaExpand",
+          "type": "managed",
+          "projectId": "CK5Roq2dBGcRPqc72xPE7",
+          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicQaExpand.tsx",
+          "importSpec": {
+            "modulePath": "QaExpand.tsx"
+          },
+          "cssFilePath": "plasmic/cfund_landing_page/PlasmicQaExpand.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5sjKOISLoI",
+          "name": "Login",
+          "type": "managed",
+          "projectId": "CK5Roq2dBGcRPqc72xPE7",
+          "renderModuleFilePath": "plasmic/cfund_landing_page/PlasmicLogin.tsx",
+          "importSpec": {
+            "modulePath": "../pages/login.tsx"
+          },
+          "cssFilePath": "plasmic/cfund_landing_page/PlasmicLogin.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
